@@ -1,6 +1,9 @@
-# assassinato-na-casa-do-amanhecer
+# Assassinato na casa do amanhecer
+<p> O objetivo é descrever os fatos ocorridos na Casa do Amanhecer e investigados por Sherlock Holmes em um programa em PROLOG. A partir dos fatos observados, eu deduzi quem, dentre os envolvidos, é o terrível assassino de Anna. </>
+ 
 
-Domingo de manhã no apartamento compartilhado 'Casa do Amanhecer', o grande detetive Sherlock Holmes foi convocado para resolver um misterioso caso de assassinato. Ao investigar a cena e conversar com os envolvidos, Holmes obtém os seguintes fatos:
+
+<p>Domingo de manhã no apartamento compartilhado 'Casa do Amanhecer', o grande detetive Sherlock Holmes foi convocado para resolver um misterioso caso de assassinato. Ao investigar a cena e conversar com os envolvidos, Holmes obtém os seguintes fatos:</p>
 
 <ul>
  <li>Anna foi assassinada com um instrumento semelhante a um taco.</li> 
@@ -26,12 +29,10 @@ Domingo de manhã no apartamento compartilhado 'Casa do Amanhecer', o grande det
  <li>Adrian e Marie têm visto um terapeuta por causa de distúrbios psicóticos que ocasionalmente se manifestam como comportamento violento desmotivado.
 </li>
 </ul>
- 
- 
- 
+
 
 # Objetivo
 Acredita-se que para ter cometido o assassinato, o assassino precisou de um motivo, insanidade, pobreza ou inveja, e de ter acesso à chave do quarto no dia do crime e a arma do crime.
-
-O objetivo é descrever os fatos ocorridos na Casa do Amanhecer e investigados por Sherlock Holmes em um programa em PROLOG. A partir dos fatos observados, eu deduzi quem, dentre os envolvidos, é o terrível assassino de Anna.
-
+ 
+ 
+ 
