@@ -33,6 +33,63 @@
 
 # Objetivo
 Acredita-se que para ter cometido o assassinato, o assassino precisou de um motivo, insanidade, pobreza ou inveja, e de ter acesso à chave do quarto no dia do crime e a arma do crime.
+
+
+<h1>Passos para a descoberta</h1>
+<h3>1º passo:</h3>
+<p> A morte é avaliada como tendo ocorrido na quinta ou sexta-feira, portanto, é possível inferir que a pessoa que estava no apartamento nestes dias ou em um deles é o(a) assassino(a):</p>
+
+```
+
+ estava(X,quinta,apartamento);estava(X,sexta,apartamento)</li>
+ X=peter,karen,harry,beth,adrian,hannah,ben,marie (estavam no apartamento na quinta ou sexta)
+
+```
+<p><b>X</b> foi a saída</p>
+
+<h3>2º passo: </h3>
+<p>Sherlock Holmes estabeleceu que a arma do crime poderia ser um taco de beisebol que foi roubado de Ben na quinta em Odensee ou na quarta em Copenhague. Para saber se isso é verdade, necessitou-se verificar a veracidade dessas afirmações:</p>
+
+```
+estava(ben,quinta,odensee);estava(ben,quarta,copenhague).
+
+```
+<p>A resposta fornecida foi false para ambas as consultas, ou seja, não foi um taco que matou anna, foi um martelo.</p>
+
+<h3>3º passo:</h3>
+<p>Sabendo que a arma que matou anna foi um martelo e que este tivera sido roubado do apartamento na quarta ou quinta-feira, é possível deduzir que dentre as pessoas que estavam lá nestes dias ou em um deles, uma delas roubou a arma. Para saber quem estava no AP no dia em que o martelo foi roubado, a seguinte consulta foi realizada:</p>
+
+```
+estava(X,quarta,apartamento);estava(X,quinta,apartamento).
+X=harry,adrian,hannah
+
+```
+<p><b>X</b> foi a saída</p>
+
+<h3>4º passo:</h3>
+<p>O assassino entrou no quarto usando a chave que foi roubada de Anna na segunda em Copenhague ou na terça em Odensee. Assim, para saber quem estava nestes locais nos dias informados, a seguinte consulta foi realizada:</p>
+
+```
+estava(X,segunda,copenhague);estava(X,terca,odensee).
+X=peter,ben,karen,harry,beth,hannah
+
+```
+
+<p><b>X</b> foi a saída</p>
+
+<h3>5º passo:</h3>
+<p>O assassino pode ter matado por motivo de ciúme. Com isso, para saber quem o pode ter feito, é necessário saber com quem anna se relacionou e, por sua vez, com quem estas pessoas se relacionaram. Assim, a seguinte consulta pode ser realizada:</p>
+
+```
+relacionamento(anna,X),relacionamento(P,X).
+```
+
+<p>Com isso, deduziu-se que anna se realacionou com peter e peter se relacionou com hannah </p>
+
+
+<h3>Conclusão:</h3>
+<p>Hannah foi a assassina que, motivada pelo ciúme, cometeu o crime utilizando um martelo :(</p> 
+
  
  
  
